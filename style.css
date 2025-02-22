@@ -23,7 +23,7 @@ body {
   color: var(--textcolor);
   background: var(--bgcolor);
   position: relative;
-  max-width: 66em;  /* remove this for a full-width layout */
+  max-width: 69em;  /* remove this for a full-width layout */
   margin: 0 auto;  /* centers the layout */
 }
 
@@ -35,7 +35,7 @@ section {
   display: none;
   position: absolute;
   top: 0;
-  min-height: 40vh;
+  min-height: 50vh;
   width: 100%;
   background: var(--bgcolor);
 }
@@ -274,13 +274,42 @@ a:before {
   margin-right: .4em;
 }
 
+/* Add more filetypes here if you want */
+
+a[href$=".pdf"]:before { content: "PDF"; }
+a[href$=".txt"]:before { content: "TXT"; }
+a[href$=".mp3"]:before { content: "MP3"; }
+a[href$=".zip"]:before { content: "ZIP"; }
+a[href$=".rar"]:before { content: "RAR"; }
+a[href$=".jpeg"]:before,
+a[href$=".jpg"]:before,
+a[href$=".gif"]:before,
+a[href$=".png"]:before { content: "IMG"; }
+
+/* ------- News ------- */
+
+article + article {
+  margin-top: 4.5em;
+}
+
+article h2 {
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+
+article time {
+  margin-left: .6em;
+  font-size: .8em;
+  font-weight: 400;
+  opacity: .7;
+}
 
 /* ------- Images Grid ------- */
 
 .grid {
   display: grid;
   grid-gap: 2vmin;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* 140px = minimum image size */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 150px = minimum image size */
   grid-auto-flow: dense;
   padding: 0em 0;
 }
