@@ -23,7 +23,7 @@ body {
   color: var(--textcolor);
   background: var(--bgcolor);
   position: relative;
-  max-width: 66em;  /* remove this for a full-width layout */
+  max-width: 900px;  /* remove this for a full-width layout */
   margin: 0 auto;  /* centers the layout */
 }
 
@@ -256,8 +256,8 @@ section:target iframe {
 
 a[href*="//"]:after { 
   font-weight: 300;
-  font-size: .85em;
-  content: "\2197"; /* top right arrow: ↗ */
+  font-size: 1em;
+  content: "\279A"; /* top right arrow: ↗ */
   color: var(--textcolor);
   opacity: .25;
 }
