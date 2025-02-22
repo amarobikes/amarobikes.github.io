@@ -23,7 +23,7 @@ body {
   color: var(--textcolor);
   background: var(--bgcolor);
   position: relative;
-  max-width: 870px;  /* remove this for a full-width layout */
+  max-width: 980px;  /* remove this for a full-width layout */
   margin: 0 auto;  /* centers the layout */
 }
 
@@ -280,7 +280,7 @@ a:before {
 .grid {
   display: grid;
   grid-gap: 2vmin;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* 140px = minimum image size */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 150px = minimum image size */
   grid-auto-flow: dense;
   padding: 0em 0;
 }
