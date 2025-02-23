@@ -68,14 +68,14 @@ header h1 {
 
 nav a:not(:last-of-type) {
   margin-right: 2vw;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* ------- General ------- */
 
 a {
   text-decoration: none;
-  color: var(--highlight);
+  color: var(--bgcolor);
 }
 
 a:hover {
@@ -195,14 +195,19 @@ pre, textarea { /* for code samples */
 a[href*="//"]:after { 
   font-weight: 300;
   font-size: 1em;
-  content: "\279A"; /* top right arrow: ↗ */
   color: var(--textcolor);
+  text-decoration:none;
   opacity: .25;
 }
 
 a[href*="//"]:hover:after {
   color: var(--highlight);
   opacity: 1;
+  text-decoration:none;
+}
+
+a {
+      text-decoration: none;
 }
 
 /* File links */
